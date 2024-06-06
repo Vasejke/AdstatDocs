@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Adstat API",
   description: "Добро пожаловать в Adstat Docs",
+  base: "/AdstatDocs/",
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
