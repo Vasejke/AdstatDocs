@@ -10,10 +10,6 @@ export default defineConfig({
       { text: 'Главная', link: '/' },
       { text: 'Начало работы', link: '/get-started/get-started' }
     ],
-    logo: {
-      light: "/logo-black.svg",
-      dark: "/logo-white.svg",
-    },
     outline: {
       level: "deep",
       label: "На этой странице",
