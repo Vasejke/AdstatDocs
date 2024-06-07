@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 export default defineConfig({
-  head: [["link", { rel: "icon", href: "favicon.ico" }]],
+  head: [['link', { rel: 'icon', href: 'favicon.ico', type: "image/x-icon" }]],
   cleanUrls: true,
   title: "Adstat Docs",
   description: "Добро пожаловать в Adstat Docs",
