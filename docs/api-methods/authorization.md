@@ -6,7 +6,7 @@
 _POST_ `v2/login`
 
 Пример использования:
-```copy
+```http request
 https://client.adstat.pro/api/v2/login
 ```
 
@@ -46,7 +46,7 @@ __Пример успешного ответа:__
 _GET_ `v2/access-token`
 
 Пример использования:
-```copy
+```http request
 https://client.adstat.pro/api/v2/access-token
 ```
 

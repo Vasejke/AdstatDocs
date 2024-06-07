@@ -1,11 +1,11 @@
 # Параметры подключения
 
-## Формирование запроса на стороне пользователя
+
 
 ::: info
-Все запросы к Adstat.pro API выполняются через HTTPS и должны быть представлены в слудующей форме: `https://client.adstat.pro/api/METHOD_NAME`. Например вот так:
+Формирование запроса на стороне пользователя - запросы к Adstat.pro API выполняются через HTTPS и должны быть представлены в слудующей форме: `https://client.adstat.pro/api/METHOD_NAME`. Например вот так:
 
-```copy
+```http request
 https://client.adstat.pro/api/v2/login/
 ```
 :::
