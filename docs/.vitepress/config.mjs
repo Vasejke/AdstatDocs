@@ -1,10 +1,11 @@
 import { defineConfig } from 'vitepress'
 export default defineConfig({
-  head: [['link', { rel: 'icon', href: 'favicon.ico', type: "image/x-icon" }]],
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   cleanUrls: true,
   title: "Adstat Docs",
   description: "Добро пожаловать в Adstat Docs",
   base: "/AdstatDocs/",
+  srcDir: "src",
   themeConfig: {
     nav: [
       { text: 'Главная', link: '/' },
