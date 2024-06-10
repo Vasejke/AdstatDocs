@@ -1,6 +1,6 @@
 # Работа с кампаниями
 
-## <span id="campaigns">Метод получения кампаний</span>
+## <span id="campaigns">Список кампаний</span>
 
 :::info
 _GET_ `/campaigns`
@@ -27,16 +27,16 @@ __Пример успешного ответа:__
 {
   "items": [
     {
-      "id": 0,
-      "name": "string",
-      "description": "string",
-      "account_id": "string",
-      "account_name": "string",
-      "status": "string",
-      "number_of_advertisements": 0,
+      "id": 999999,
+      "name": "example",
+      "description": "",
+      "account_id": "ACC000000",
+      "account_name": "SOME_test",
+      "status": "not_active",
+      "number_of_advertisements": 2,
       "goals": 0,
       "impressions": 0,
-      "budget": 0,
+      "budget": 0.01,
       "cps": 0,
       "cpm": 0,
       "ctr": 0,

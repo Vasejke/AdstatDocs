@@ -1,6 +1,6 @@
 # Работа с кабинетами
 
-## <span id="cabinets">Метод получения кабинетов</span>
+## <span id="cabinets">Список кабинетов</span>
 
 :::info
 _GET_ `accounts/telegram/names`
@@ -19,7 +19,7 @@ __Пример успешного ответа:__
 ```json
 [
   {
-    "account_uid": "string",
+    "account_uid": "ACC0000",
     "name": "string",
     "balance": 0,
     "mode": "string",
@@ -42,7 +42,7 @@ __Описание параметров успешного ответа:__
 
 
 
-## Метод получения информации по отдельному кабинету
+## Информация по отдельному кабинету
 :::info
 _GET_ `api/accounts/telegram/{account_uid}`
 
@@ -61,7 +61,7 @@ __Параметры:__
 __Пример успешного ответа:__
 ```json
   {
-    "account_uid": "string",
+    "account_uid": "ACC0000",
     "name": "string",
     "balance": 0,
     "mode": "string",
@@ -80,7 +80,7 @@ __Описание параметров успешного ответа:__
 | is_audience_allowed| Внутренний параметр для технических нужд |
 :::
 
-## Метод получение подробной информации по кабинетам
+## Подробная информация по кабинетам
 
 :::info
 _GET_ `accounts/telegram/?query-params`
@@ -104,22 +104,22 @@ __Пример успешного ответа:__
   {
   "items": [
     {
-      "account_id": "string",
-      "account_name": "string",
-      "status": "string",
+      "account_id": "ACC0000",
+      "account_name": "account name",
+      "status": "active",
       "balance_total": 0,
       "balance_available": 0,
       "balance_active": 0,
       "balance_spent": 0,
       "objects": [
-        "string"
+        "t.me/example"
       ],
-      "legal_name": "string",
-      "category_key": "string",
-      "category_name": "string"
+      "legal_name": "legal name",
+      "category_key": "education",
+      "category_name": "Образование"
     }
   ],
-  "count": 0
+  "count": 1
 }
 ```
 __Описание параметров успешного ответа:__

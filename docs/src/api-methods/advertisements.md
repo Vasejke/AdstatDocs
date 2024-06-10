@@ -1,6 +1,6 @@
 # Работа с объявлениями
 
-## <span id="advertisements">Метод получения кампаний</span>
+## <span id="advertisements">Список кампаний</span>
 
 :::info
 _GET_ `v2/advertisement/?show_deleted=false&period=today&offset=0&limit=50&advertisement_titles=&campaign_names=`
@@ -30,21 +30,19 @@ __Пример успешного ответа:__
 {
   "data": [
     {
-      "id": 0,
-      "account_name": "string",
-      "campaign_name": "string",
-      "advertisement_title": "string",
-      "status": "string",
-      "object": "string",
-      "ad_text": "string",
-      "cpm": 0,
-      "target_topics": [
-        "string"
-      ],
-      "balance": 0,
+      "id": 1364755,
+      "account_name": "SOME_test",
+      "campaign_name": "Default",
+      "advertisement_title": "example title",
+      "status": "stopped",
+      "object": "t.me/example",
+      "ad_text": "example text",
+      "cpm": 3.0,
+      "target_topics": [],
+      "balance": 0.0,
       "cps": 0,
-      "created_dt": "string",
-      "status_updated_dt": "2024-06-07T11:50:05.475Z",
+      "created_dt": "09.01.1998 09:04:26",
+      "status_updated_dt": "1998-01-09T09:29:27.311931+00:00",
       "ad_type": "target_channels",
       "goals": 0,
       "impressions": 0,

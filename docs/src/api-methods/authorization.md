@@ -1,6 +1,6 @@
 # Авторизация
 
-## Метод авторизации в системе
+## Авторизации в системе
 
 ::: info
 _POST_ `v2/login`
@@ -27,9 +27,9 @@ __Пример параметров в тело запроса:__
 __Пример успешного ответа:__
 ```json
 {
-  "user_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-  "access_token": "string",
-  "refresh_token": "string"
+  "user_id": "3fa85f64-5717-4562-b3fc-2c922263f66a",
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+  "refresh_token": "dGhpcyBpcyBhIHJlZnJlc2ggdG9rZW4gdXNlZCB0byBnZXQgYW4gbmV3IGFjY2VzcyB0b2tlbiB3aGVuIHRoZSBjdXJyZW50IGFjY2VzcyB0b2tlbiBleHBpcmVz"
 }
 ```
 
@@ -40,7 +40,7 @@ __Пример успешного ответа:__
 `<refresh_token>` необходимо использовать в методе `v2/access_token`, когда истёк срок действия `<access_token>` - для обновления `<access_token>`
 :::
 
-## Метод рефреш токена
+## Рефреш токена
 
 ::: info
 _GET_ `v2/access-token`
@@ -59,7 +59,7 @@ __Пример успешного ответа:__
 
 ```json
 {
-  "access_token": "string",
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
   "token_type": "Bearer"
 }
 ```

@@ -1,6 +1,7 @@
 # Работа со статистикой
 
-## Метод получения статистики
+## Статистика
+
 :::info
 _POST_ `report/tgview`
 
@@ -30,7 +31,7 @@ __Параметры:__
 | groupings      | Массив объектов | Список объектов группировки данных. Каждый объект определяет параметр группировки.                                                                                                                                                                                                                                                                                     |
 | groupings.name | Строка      | Имя параметра для группировки (например, `"date"`, `"object"` итд ).                                                                                                                                                                                                                                                                                                   |
 | groupings.type | Число       | Тип группировки для параметра. Используется только для некоторых группировок (например, `1`).                                                                                                                                                                                                                                                                          |
-| object         | Массив      | Список идентификаторов объектов рекламирования для плучения статистики по выбранным объектам. `["t.me/someobject", "..."]`. Если нужно получить по всем объектам, то значение - `[]`. <br/>Список объектов рекламирования можно получить в [Метод получения объектов рекламирования](#objects)                                                                         |
+| object         | Массив      | Список идентификаторов объектов рекламирования для плучения статистики по выбранным объектам. `["t.me/someobject", "..."]`. Если нужно получить по всем объектам, то значение - `[]`. <br/>Список объектов рекламирования можно получить в [Список объектов рекламирования](#objects)                                                                                  |
 | sub_client     | Массив      | Внутренний параметр для технических нужд.                                                                                                                                                                                                                                                                                                                              |
 | type_cab       | null        | Тип кабинета. Статичное значение - всегда `null`.                                                                                                                                                                                                                                                                                                                      |
 | currency       | Строка      | Валюта, в которой будут представлены данные. Статичное значение - всегда `RUB`                                                                                                                                                                                                                                                                                         |
@@ -111,43 +112,35 @@ __Пример успешного ответа:__
 {
   "results": [
     {
-      "date": "2024-06-07",
-      "unit": 0,
-      "campaign_plat": "string",
-      "ad_text": "string",
+      "date": "2024-06-09",
+      "unit": 1016091001563,
+      "campaign_plat": "\u043f\u0440\u0438\u043c\u0435\u0440",
+      "ad_text": "\u043f\u0440\u0438\u043c\u0435\u0440 \u0442\u0435\u043a\u0441\u0442\u0430",
       "target_topics": [
-        "string"
+        "Offers & Promotions"
       ],
-      "target_channels": [
-        "string"
-      ],
+      "target_channels": [],
       "target_langs": [
-        "string"
+        "Russian"
       ],
-      "spent": 0,
-      "impressions": 0,
-      "goals": 0,
-      "price_target": 0,
-      "cpm": 0,
-      "object": "string",
-      "account_uid": "string",
-      "account_name": "string",
-      "target_countries": [
-        "string"
-      ],
-      "target_user_locations": [
-        "string"
-      ],
-      "target_user_channels": [
-        "string"
-      ],
+      "spent": 0.004,
+      "impressions": 1.0,
+      "goals": 0.0,
+      "price_target": 0.0,
+      "cpm": 1.33,
+      "object": "t.me/example",
+      "account_uid": "ACC0000000",
+      "account_name": "SOME_Test",
+      "target_countries": [],
+      "target_user_locations": [],
+      "target_user_channels": [],
       "ad_type": "target_channels",
-      "ad_id": 0,
+      "ad_id": 999999999,
       "clicks": 0,
-      "cpc": 0,
-      "ctr": 0,
-      "promote_url": "string",
-      "website_name": "string"
+      "cpc": 0.0,
+      "ctr": 0.0,
+      "promote_url": "t.me/example",
+      "website_name": null
     }
   ]
 }
@@ -186,7 +179,7 @@ __Описание параметров успешного ответа:__
 :::
 
 
-## <span id="objects">Метод получения объектов рекламирования</span>
+## <span id="objects">Список объектов рекламирования</span>
 :::info
 _GET_ `report/objects`
 

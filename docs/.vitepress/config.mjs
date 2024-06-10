@@ -9,7 +9,13 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Главная', link: '/' },
-      { text: 'Начало работы', link: '/get-started/get-started' }
+      { text: 'Начало работы', link: '/get-started/get-started' },
+      {
+        text: '1.0.0',
+        items: [
+          { text: 'Swagger', link: 'https://client.adstat.pro/api/docs' },
+        ]
+      }
     ],
     outline: {
       level: "deep",
@@ -55,5 +61,5 @@ export default defineConfig({
         },
       },
     },
-  }
+  },
 })

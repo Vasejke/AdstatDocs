@@ -1,6 +1,6 @@
 # Балансы
 
-## Метод получение общих балансов
+## Общие балансы
 :::info
 _GET_ `dashboard/balances`
 
@@ -20,15 +20,15 @@ __Пример успешного ответа:__
 {
   "active": {
     "amount": 0,
-    "currency": "string"
+    "currency": "EUR"
   },
   "available": {
     "amount": 0,
-    "currency": "string"
+    "currency": "EUR"
   },
   "total": {
     "amount": 0,
-    "currency": "string"
+    "currency": "EUR"
   }
 }
 ```
